@@ -160,6 +160,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all .75s;
+    z-index: 99;
 }
 
 .show-menu .sidebar{
@@ -262,7 +263,7 @@ header{
 }
 
 .conhecimento{
-    z-index: 1;
+    z-index: 2;
 }
 
 .conhecimento-header{
@@ -313,6 +314,7 @@ header{
     grid-row: 2/6;
     width: 100%;
     transform: scale(1.25);
+    z-index: 1;
 }
 
 .conhecimentos-img-wrapper img{
