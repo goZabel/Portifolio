@@ -200,30 +200,36 @@
             <section class="sessao-orcamento" id="orcamento">
                 <div class="orcamento-wrapper">
                     <h1>Faça um orçamento</h1>
-                    <form>
-                        <label for="qtde">Quantidade de Páginas</label>
-                        <input type="number" min="1" name="qtde" id="qtde">
+                    <form class="form-orcamento">
+                        <div class="form-container">
+                            <div class="group-layout">
 
-                        <label for="js">Preciso de um script JS</label>
-                        <input type="checkbox" name="js" id="js">
+                                <div class="form-group">
+                                    <label for="qtde">Quantidade de Páginas: <input type="number" min="1" name="qtde" id="qtde"></label>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="js"><input type="checkbox" name="js" id="js"> Preciso de um script JS</label>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label class="dica">Layout:</label>
 
-                        <label>Layout</label>
-                        <div class="group-layout">
-                            <div>
-                                <input type="radio" name="layout" id="layout-sim">
-                                <label for="layout-sim">Preciso de um Layout</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="layout" id="layout-nao">
-                                <label for="layout-nao">Já tenho um Layout</label>
+                                    <label for="layout-sim"><input type="radio" name="layout" id="layout-sim"> Preciso de um Layout</label>
+    
+                                    <label for="layout-nao"><input type="radio" name="layout" id="layout-nao"> Já tenho um Layout</label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="prazo">Prazo: 6 semanas</label>
+                                    <input type="range" name="prazo" id="prazo" min="1" max="10">
+                                </div>
+
                             </div>
                         </div>
 
-                        <label for="prazo">Prazo</label>
-                        <input type="range" name="prazo" id="prazo" min="1" max="10">
-
-                        <label id="preco">R$ 0,00</label>
-
+                        <p class="preco" id="preco"><span class="dica">Total: </span>R$ 0,00</p>
+                        
                         <button class="btn btn-orcamento" type="submit">Enviar</button>                        
                     </form>
                 </div>

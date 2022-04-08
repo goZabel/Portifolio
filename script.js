@@ -26,5 +26,5 @@ function mudarPreco(){
     if (layoutSim) preco += 500
     let taxaUrgencia = 1 - prazo*0.1
     preco *= 1 + taxaUrgencia
-    document.querySelector("#preco").innerHTML = `R$ ${preco.toFixed(2).replace(".", ",")}`
+    document.querySelector("#preco").innerHTML = `<span class="dica">Total: </span>R$ ${preco.toFixed(2).replace(".", ",")}`
 }
